@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AvroConvert" Version="3.2.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KafkaAvroProducer.Abstractions\KafkaAvroProducer.Abstractions.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="dotnet run --no-build &amp;&amp; dotnet tool install --global Apache.Avro.Tools --version 1.11.1 &amp; avrogen -s PokeAvroModel.asvc schema &amp;&amp; copy schema\KafkaAvroProducer\Abstractions\Models\PokeAvroModel.cs ..\KafkaAvroProducer.Abstractions\Models\Avro &amp;&amp; rmdir /s /q schema" />
+  </Target>
+
+</Project>

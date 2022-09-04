@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaAvroProducer", "KafkaAvro\KafkaAvroProducer.csproj", "{08C6C1C3-2F18-4DAF-BE9C-3F2303815F16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaAvroProducer.Abstractions", "KafkaAvroProducer.Abstractions\KafkaAvroProducer.Abstractions.csproj", "{A8CBD4F8-A1E8-42EF-B6FC-65673463B763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvroSchemaGenerator", "AvroSchemasGenerator\AvroSchemaGenerator.csproj", "{FD6CB1D9-DB16-42C4-BF95-92D5E2A4D115}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08C6C1C3-2F18-4DAF-BE9C-3F2303815F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C6C1C3-2F18-4DAF-BE9C-3F2303815F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C6C1C3-2F18-4DAF-BE9C-3F2303815F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C6C1C3-2F18-4DAF-BE9C-3F2303815F16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CBD4F8-A1E8-42EF-B6FC-65673463B763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CBD4F8-A1E8-42EF-B6FC-65673463B763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CBD4F8-A1E8-42EF-B6FC-65673463B763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CBD4F8-A1E8-42EF-B6FC-65673463B763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6CB1D9-DB16-42C4-BF95-92D5E2A4D115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6CB1D9-DB16-42C4-BF95-92D5E2A4D115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6CB1D9-DB16-42C4-BF95-92D5E2A4D115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6CB1D9-DB16-42C4-BF95-92D5E2A4D115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64DB3409-32AA-45BB-A508-6CE4081B3D31}
+	EndGlobalSection
+EndGlobal
